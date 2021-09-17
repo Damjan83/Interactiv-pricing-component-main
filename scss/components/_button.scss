@@ -1,0 +1,17 @@
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--Text-CTA-Background);
+    border: 2px solid var(--Text-CTA-Background);
+    cursor: pointer;
+    color: var(--CTA-Text);
+    font-size: 10px;
+    font-family: inherit;
+    transition: all;
+    box-shadow: 0 5px 10px var(--Text-CTA-Background);
+}
+button:hover{
+    background-color: transparent;
+    color: var(--Text-CTA-Background);
+}

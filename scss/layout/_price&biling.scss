@@ -1,0 +1,111 @@
+.price__mobile{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 30px 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    @include for-size(phone-only) {    
+        display: flex; 
+     }
+}
+.price__mobile span {
+    color: var(--Text-CTA-Background);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.price__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    p {
+        color: var(--Text);
+        font-size: 15px;
+        font-weight: 800;
+    }
+    @include for-size(phone-only) {    
+        display: none; 
+     }
+}
+#pageviews__m{
+    margin: 30px 0 30px 0;
+    display: none;
+    @include for-size(phone-only) {    
+        display: block; 
+        text-transform: uppercase;
+     }
+}
+#pageviews__d {
+    text-transform: uppercase;
+}
+.month{
+    font-size: 15px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.montly{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: end;
+    .montly__biling, .switch, .yearly__biling {
+        margin-right: 10px;
+    }
+}
+.discount{
+    width: 50px;
+    height: 20px;
+    background-color: var(--Discount-Background);
+    color: var(--Discount-Text);
+    border-radius: 10px;
+    display: none;
+    @include for-size(phone-only) {    
+        display: block; 
+     }
+}
+.discount--desktop {
+    background-color: var(--Discount-Background);
+    color: var(--Discount-Text);
+    display: block;
+    margin-right: 15px;
+    @include for-size(phone-only) {    
+        display: none; 
+     }
+}
+.bottom-list{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include for-size(phone-only) {    
+        display: block; 
+     }
+}
+.price__desktop--1 {
+    display: flex;
+}
+#price_m {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 800;
+        color: var(--Text-CTA-Background);
+        display: block;
+        margin-right: 10px;
+    }
+}
+#price_d {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 800;
+        color: var(--Text-CTA-Background);
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+header{
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.header__h2{
+    color: var(--Text-CTA-Background);
+    margin-top: 85px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header__p{
+    margin: 0 60px 0 60px;
+    font-size: 13px;
+    font-weight: 400;
+}
+header img{
+    position: absolute;
+    top: 50px;
+    left: 46%;
+    z-index: -1;
+    @include for-size(phone-only) {    
+        left: 31%; 
+     }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+@import 'scss/config/_mediaQueries';
+@import 'scss/components/_button';
+@import 'scss/components/_slider';
+@import 'scss/layout/_flex';
+@import 'scss/layout/_header';
+@import 'scss/layout/_price&biling';
+@import 'scss/components/_switch';
+
+:root{
+    /* Primary */
+    --Full-Slider-Bar: hsl(174, 77%, 80%);
+    --Slider-Backround: hsl(174, 86%, 45%);
+    --Discount-Background: hsl(14, 92%, 95%);
+    --Discount-Text: hsl(15, 100%, 70%);
+    --CTA-Text: hsl(226, 100%, 87%);
+    
+    /* Neutral */
+    --Pricing-Component-Background: hsl(0, 0%, 100%);
+    --Main-Background: hsl(230, 100%, 99%);
+    --Empty-Slider-Bar: hsl(224, 65%, 95%);
+    --Toggle-Background: hsl(223, 50%, 87%);
+    --Text: hsl(225, 20%, 60%);
+    --Text-CTA-Background: hsl(227, 35%, 25%);
+    }
+    body{
+        font-family: 'Manrope' , sans-serif;
+        font-size: 15px;
+        background-image: url('../images/bg-pattern.svg');
+        background-repeat: no-repeat;
+        color: var(--Text);
+        text-align: center;
+    }
+    section{
+        margin: auto;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 25px;
+        text-align: left;
+        li img {
+            margin-right: 10px;
+        }
+    }
+    .line{
+        border: 1px solid  hsl(223, 21%, 94%);
+        width: 100%;
+        margin: 30px 0;
+    }
+   
